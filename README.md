@@ -34,12 +34,12 @@ kubectl apply -f pod-mysql.yaml
 
 ## Acessando o servidor nginx
 
-- Pegue o ip do minikube
+- Pegue o ip do serviço no minikube
 ```
 minikube service nginx --url
 ```
 
-- Abra no navegador a url
+- Abra no navegador a url para acessar o nginx
 
 ## Acessando o mysql através do container ngix
 
@@ -48,10 +48,11 @@ minikube service nginx --url
 kubectl get all -o wide
 ```
 
-- Acesse o pod do nginx
+- Acesse a linha de comando do pod do nginx
 ```
 kubectl exec -it pod/pod-nginx -- bash
 ```
+
 - Instale o cliente mysql
 ```
 apt update && apt install -y default-mysql-client
@@ -65,8 +66,5 @@ mysql -h <IP_DO_POD_MYSQL> -u root -ppassword
 ## Removendo e desligando o cluster
 ```
 minikube delete
-```
-
-```
 minikube stop
 ```
