@@ -5,7 +5,7 @@ Subir dois pods, nginx e mysql, mapeando a porta 80 do nginx para acesso externo
 
 # Resolução
 
-- Instale o [minikube](https://minikube.sigs.k8s.io/docs/start/) e o [kubernetes](https://kubernetes.io/pt-br/docs/setup/) em seu computador
+- Instale o [minikube](https://minikube.sigs.k8s.io/docs/start/) para prover um cluster kubernetes local em sua máquina e o [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/) em seu computador
 
 - Inicie o minikube
 ```
